@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquary Demo</title>
+	<script type="text/javascript" src="code.jquery.com_jquery-3.7.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $('.demo').html('<b>Hello</b>');
+			// $('.demo a').css({'font-size':30,'background-color':'red','text-decoration':'none','color':'white'});
+			// $('.demo').css({'width':'1000px','background-color':'red'})
+			// $('.demo').css({'height':'70px','width':'130px','background-color':'#a2d2ff','font-size':50,'border-radius':'20px','text-align':'center'})
+			// $('.demo a').css({'text-decoration':'none'})
+			// $('.demo').css({'height':'70px','width':'130px','background-color':'#a2d2ff','font-size':50,'border-radius':'20px','text-align':'center'})
+			$('#off').mouseover(function()
+			{
+				$(this).attr('src','image/istockphoto-677416124-612x612 (1).jpg')	
+			})
+			$('#off').mouseout(function()
+			{
+				$(this).attr('src','image/istockphoto-677416124-612x612.jpg')	
+			})
+		})
+	</script>
+	
+</head>
+<body>
+
+<div class="demo"><a href="/">Demo</a></div>
+<img src="image/istockphoto-677416124-612x612.jpg" alt="" id="off">
+
+</body>
+</html>
